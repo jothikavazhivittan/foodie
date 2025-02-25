@@ -1,0 +1,15 @@
+export const arrows=require('./arrows.png');
+export const box=require('./box.png');
+export const chappathi=require('./chappathi.png');
+export const kitchadi=require('./kitchadi.png');
+export const line=require('./line.png');
+export const offer=require('./offer.png');
+export const search=require('./search.png');
+export const profile=require('./profile.png');
+export const puri=require('./puri.png');
+export const salat=require('./salat.png');
+export const squre=require('./squre.png');
+export const time=require('./time.png');
+export const wishlist=require('./wishlist.png');
+export const home=require('./home.png');
+export const menu=require('./menu.png');
