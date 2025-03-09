@@ -7,7 +7,7 @@ import { fS } from '../../assets/constant/FontSize';
 import Img from '../Common/img/Img';
 import Word from '../Common/Word/Word';
 
-const BottomNavigate = ({bg}) => {
+const BottomNavigate = () => {
   const route = useRoute();
   const navigation = useNavigation();
   const [selectedId, setSelectedId] = useState(null);
@@ -19,7 +19,7 @@ const BottomNavigate = ({bg}) => {
   };
   return (
     <View
-      style={[styles.headContainer, {backgroundColor: bg ? bg : '#white'}]}>
+      style={styles.headContainer}>
       {bottomList?.map((item, id) => {
         return (
           <TouchableOpacity
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     width: '100%',
     height: fS(100),
     paddingHorizontal: fS(10),
-    borderTopWidth: 1,
     zIndex: 1000,
+    backgroundColor:'#eddea4'
   },
 });

@@ -1,33 +1,21 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import HomeScreen from '../../screen/HomeScreen';
-import ManuScreen from '../../screen/ManuScreen';
-import OrderScrenn from '../../screen/OrderScrenn';
-import ProfileScreen from '../../screen/ProfileScreen';
+import CartScreen from '../../screen/CartScreen';
+import OrderHistoryScreen from '../../screen/OrderHistoryScreen';
 
 const Stack = createNativeStackNavigator();
 const MainStackNavigator = () => {
   return (
     <Stack.Navigator
-      initialRouteName="menu"
+      initialRouteName="home"
       headerMode="none"
       screenOptions={{headerShown: false}}>
       <Stack.Screen
         name="home"
         component={HomeScreen}
       />
-      <Stack.Screen
-        name="menu"
-        component={ManuScreen}
-      />
-      <Stack.Screen
-        name="order"
-        component={OrderScrenn}
-      />
-      <Stack.Screen
-        name="profile"
-        component={ProfileScreen}
-      />
-      
+      <Stack.Screen name='cart' component={CartScreen}/>
+      <Stack.Screen name='order_history' component={OrderHistoryScreen}/>
     </Stack.Navigator>
   );
 };
